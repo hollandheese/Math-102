@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Math 102 Problem Set 1 Lines Circles Functions</title>
+  <style>
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+  </style>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js"
+  type="text/javascript"></script>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<p><strong>Math 102 Precalculus- Problem Set 1: Lines, Circles, Distance
+and Midpoint Formula, Functions and Domains<br />
+</strong></p>
+<hr />
+<ol type="1">
+<li><p>Consider the points <span class="math inline">\((-1,2)\)</span>
+and <span class="math inline">\((0,-2)\)</span>.</p>
+<ol type="1">
+<li><p>Plot and label these points in the <span
+class="math inline">\(x\)</span>-<span class="math inline">\(y\)</span>
+plane.</p></li>
+<li><p>Find the slope of the line connecting these points.</p></li>
+<li><p>Write the equation of the line that goes through these points in
+point-slope form.</p></li>
+<li><p>Write the equation of the line that goes through these points in
+slope–intercept form.</p></li>
+<li><p>Sketch the line and label the <span
+class="math inline">\(y\)</span>-intercept.</p></li>
+</ol></li>
+<li><p>Repeat the steps above for the points <span
+class="math inline">\((\frac{2}{3},-1)\)</span> an <span
+class="math inline">\((-\frac{1}{3},-2)\)</span>.</p></li>
+<li><p>Consider the line <span
+class="math inline">\(y=-2x+5\)</span>.</p>
+<ol type="1">
+<li><p>Determine whether the point <span
+class="math inline">\((2,1)\)</span> lies on the graph of the line.
+Approach this problem two ways– use the equation and also use your graph
+by plotting the point.</p></li>
+<li><p>Determine whether the point <span
+class="math inline">\((3,-1)\)</span> lies on the graph of the
+line.</p></li>
+<li><p>Determine whether the point <span
+class="math inline">\((3,-2)\)</span> lies on the graph of the
+line.</p></li>
+</ol></li>
+<li><p>Consider the equation <span class="math inline">\(-3x + 6y -2 =
+0\)</span>.</p>
+<ol type="1">
+<li><p>Rewrite this equation in slope-intercept form.</p></li>
+<li><p>What is the slope of this line?</p></li>
+<li><p>What is the <span class="math inline">\(y\)</span>-intercept
+(give as a point)?</p></li>
+<li><p>What is the <span class="math inline">\(x\)</span>-intercept
+(give as a point)? Hint: to find an <span
+class="math inline">\(x\)</span>-intercept, set <span
+class="math inline">\(y=0\)</span> and solve for <span
+class="math inline">\(x\)</span>.</p></li>
+<li><p>Sketch the line.</p></li>
+<li><p>What observations can you make about the general form of the
+equation of a line? For example, what are the powers of <span
+class="math inline">\(x\)</span> and <span
+class="math inline">\(y\)</span> terms for equations of lines?</p></li>
+</ol></li>
+<li><p>Consider the following graph. Write the equation of the line in
+slope-intercept form.</p>
+<figure>
+<img src="line.png" style="width:6cm" alt="image" />
+<figcaption aria-hidden="true">image</figcaption>
+</figure></li>
+<li><p>Consider the line <span class="math inline">\(x=5\)</span>.</p>
+<ol type="1">
+<li><p>List any two points which lie on this line.</p></li>
+<li><p>In general, if a point is on this line, what is its <span
+class="math inline">\(x\)</span>-coordinate?</p></li>
+<li><p>What is the slope of this line?</p></li>
+<li><p>We have defined slope to be “rise over run.” For the two points
+you selected, what is the rise? What is the run?</p></li>
+<li><p>Write a short explanation for why a number divided by zero is
+undefined. Hint: Feel free to use google. Both Wikipedia and Khan
+Academy have explanations.</p></li>
+<li><p>Sketch the line.</p></li>
+</ol></li>
+<li><p>Consider the line <span
+class="math inline">\(y=-\frac{1}{3}x-1\)</span>.</p>
+<ol type="1">
+<li><p>Write the equation of the line parallel to the given line and
+passing through the point <span class="math inline">\((3,2)\)</span>.
+Give your equation in slope-intercept form.</p></li>
+<li><p>Sketch both lines.</p></li>
+<li><p>What is the only difference between the equations for each
+line?</p></li>
+</ol></li>
+<li><p>Consider the line <span
+class="math inline">\(y=2x-1\)</span>.</p>
+<ol type="1">
+<li><p>Write the equation of the line perpendicular to the given line
+and passing through the point <span
+class="math inline">\((-2,1)\)</span>. Give your equation in
+slope-intercept form.</p></li>
+<li><p>Sketch both lines.</p></li>
+<li><p>Where do the lines intersect? Hint: set the equations equal to
+each other and solve for <span class="math inline">\(x\)</span>. Then
+use this <span class="math inline">\(x\)</span> value to solve for <span
+class="math inline">\(y\)</span>.</p></li>
+</ol></li>
+<li><p>Consider a line, <span class="math inline">\(y=2x+1\)</span>.</p>
+<ol type="1">
+<li><p>If the line is reflected across the <span
+class="math inline">\(y\)</span>-axis, find its equation. Sketch both
+lines. How did the <span class="math inline">\(y\)</span> intercept
+change with the reflection? How did the slope change with the
+reflection?</p></li>
+<li><p>If the line is reflected across the <span
+class="math inline">\(x\)</span>-axis, find its equation. Sketch both
+lines. How did the <span class="math inline">\(y\)</span> intercept
+change with the reflection? How did the slope change with the
+reflection?</p></li>
+<li><p>Can you make any generalizations about a line of the form <span
+class="math inline">\(y=mx+b\)</span> and the equations of the
+reflections above? Hint: it might help to do a few more concrete
+examples.</p></li>
+</ol></li>
+<li><p>A line with slope <span class="math inline">\(-3\)</span> passes
+through the points <span class="math inline">\((-8,p)\)</span> and <span
+class="math inline">\((2,3p)\)</span>.</p>
+<ol type="1">
+<li><p>Find <span class="math inline">\(p\)</span>.</p></li>
+<li><p>Write the equation of this line in slope-intercept form.</p></li>
+<li><p>Sketch this line.</p></li>
+</ol></li>
+<li><p>Graph a family of lines of the form <span
+class="math inline">\(y=3x+c\)</span> on the same <span
+class="math inline">\(x\)</span>-<span class="math inline">\(y\)</span>
+plane where <span class="math inline">\(c\)</span> is any real number.
+Describe the pattern of the graph. How does changing <span
+class="math inline">\(c\)</span> change the graphs of the lines? Hint:
+choose a few values of <span class="math inline">\(c\)</span> and graph
+those lines. For example, you might sketch <span
+class="math inline">\(y=3x+1\)</span>, <span
+class="math inline">\(y=3x+2\)</span>, <span
+class="math inline">\(y=3x-10\)</span>.</p></li>
+<li><p>Graph a family of lines of the form <span
+class="math inline">\(y=dx+1\)</span> on the same <span
+class="math inline">\(x\)</span>-<span class="math inline">\(y\)</span>
+plane where <span class="math inline">\(d\)</span> is any real number.
+Describe the pattern of the graph. How does changing <span
+class="math inline">\(d\)</span> change the graphs of the lines? Now
+check your intuition using this Desmos application which has a slider
+for the parameters <span class="math inline">\(m\)</span> and <span
+class="math inline">\(b\)</span> for lines of the form <span
+class="math inline">\(y=mx+b\)</span>:
+https://www.desmos.com/calculator/wuxkicjcre</p></li>
+<li><p>Consider the points <span class="math inline">\((2,3)\)</span>
+and <span class="math inline">\((0,6)\)</span>.</p>
+<ol type="1">
+<li><p>Plot and label these points in the <span
+class="math inline">\(x\)</span>-<span class="math inline">\(y\)</span>
+plane.</p></li>
+<li><p>Find the slope of the line connecting these points.</p></li>
+<li><p>Find the distance between the points.</p></li>
+<li><p>Find the midpoint of the line segment connecting these points.
+Label the midpoint on your sketch.</p></li>
+</ol></li>
+<li><p>Find a point of the form <span
+class="math inline">\((2a,a)\)</span> in the third quadrant such that
+the distance from this point to <span
+class="math inline">\((1,3)\)</span> is <span
+class="math inline">\(5\)</span>. Hint: You might start by writing the
+distance formula for the two points and setting it equal to <span
+class="math inline">\(5\)</span>.</p></li>
+<li><p>Consider the circle with equation <span
+class="math inline">\(x^2+y^2+8x-6y+16=0\)</span>.</p>
+<ol type="1">
+<li><p>Complete the square to put this equation in standard form (<span
+class="math inline">\((x-h)^2+(y-k)^2=r^2\)</span>).</p></li>
+<li><p>What is the center?</p></li>
+<li><p>What is the radius?</p></li>
+<li><p>Sketch the circle.</p></li>
+<li><p>Is this a function?</p></li>
+</ol></li>
+<li><p>Consider the following mapping. Is it a function? Why or why
+not?</p>
+<figure>
+<img src="notfunction.png" style="width:3cm" alt="image" />
+<figcaption aria-hidden="true">image</figcaption>
+</figure></li>
+<li><p>Let <span class="math inline">\(f(x)=8-x^2\)</span>. Fill out the
+following table by evaluating the function.</p>
+<div class="center">
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: center;"><span
+class="math inline">\(x\)</span></th>
+<th style="text-align: center;"><span
+class="math inline">\(f(x)\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">-2</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">-1</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">0</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">1</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">2</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><span
+class="math inline">\(apple\)</span></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><span
+class="math inline">\(2+h\)</span></td>
+<td style="text-align: center;"></td>
+</tr>
+</tbody>
+</table>
+</div></li>
+<li><p>Consider <span class="math inline">\(f(x)=2x+1\)</span>.</p>
+<ol type="1">
+<li><p>Fill out the following table (I did the first row as an
+example):</p>
+<div class="center">
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: center;"><span
+class="math inline">\(x\)</span></th>
+<th style="text-align: center;"><span
+class="math inline">\(f(x)\)</span></th>
+<th style="text-align: center;"><span
+class="math inline">\(f(x+2)\)</span></th>
+<th style="text-align: center;"><span
+class="math inline">\(f(x)+3\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><span style="color: blue">1</span></td>
+<td style="text-align: center;"><span
+class="math inline">\(2(\textcolor{blue}{1})+1 =3\)</span></td>
+<td style="text-align: center;"><span
+class="math inline">\(2(\textcolor{blue}{1}+2)+1=7\)</span></td>
+<td style="text-align: center;"><span
+class="math inline">\(2(\textcolor{blue}{1})+1 +3=6\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">2</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">3</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">4</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+</tbody>
+</table>
+</div></li>
+<li><p>Sketch <span class="math inline">\(f(x)\)</span>. Label the four
+points in your table on the graph.</p></li>
+<li><p>Sketch <span class="math inline">\(f(x+2)\)</span>. Label the
+four points in your table on the graph. How does this sketch relate to
+the sketch of <span class="math inline">\(f(x)\)</span>?</p></li>
+<li><p>Sketch <span class="math inline">\(f(x)+3\)</span>. Label the
+four points in your table on the graph. How does this sketch relate to
+the sketch of <span class="math inline">\(f(x)\)</span>?</p></li>
+<li><p>Can you make a guess about how the addition of constants inside
+and outside the function alters the graph? For example, <span
+class="math inline">\(f(x+a)\)</span> does what to a graph? And <span
+class="math inline">\(f(x) + b\)</span> does what?</p></li>
+</ol></li>
+<li><p>Sketch the domain of each function on the real number line. Give
+the domain in <strong>interval notation</strong> of the following
+functions.</p>
+<ol type="1">
+<li><p><span class="math inline">\(f(x)=\sqrt{x-7}\)</span></p></li>
+<li><p><span class="math inline">\(f(x)=\frac{1}{x-4}\)</span></p></li>
+<li><p><span class="math inline">\(f(x) =
+\frac{2x-3}{3x+5}\)</span></p></li>
+<li><p><span class="math inline">\(f(x) = \sqrt{x-5} +
+\frac{x+1}{x-10}\)</span> Hint: you might consider the domain of each
+term separately, then look for the intersection.</p></li>
+</ol></li>
+<li><p>REFLECTION AND CONSOLIDATION (Hint: this will form part of a
+study guide for your first exam!)</p>
+<ol type="1">
+<li><p>Summarize the main ideas/formulas you used for this problem set.
+You can list formulas, bullet-out phrases, write a paragraph, draw
+sketches, or answer this question in any way that makes sense to
+you.</p></li>
+<li><p>What three problems were the most challenging for you? After
+deciding, look at your solutions carefully, and write a short
+explanation of what you found challenging and how you overcame this
+challenge in your problem solving. For example, did you find a simpler
+problem about the same topic? Did you guess and check? Did you graph
+with technology?</p></li>
+<li><p>Write three potential test questions on the topics covered in
+this problem set.</p></li>
+</ol></li>
+</ol>
+</body>
+</html>

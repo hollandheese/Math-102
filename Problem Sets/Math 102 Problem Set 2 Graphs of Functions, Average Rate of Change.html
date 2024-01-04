@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Math 102 Problem Set 2 Graphs of Functions, Average Rate of Change</title>
+  <style>
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+  </style>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js"
+  type="text/javascript"></script>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<p><strong>Math 102 Precalculus- Problem Set 2: Graphs of Functions,
+Average Rate of Change, Algebra with Functions<br />
+</strong></p>
+<hr />
+<ol type="1">
+<li><p>Let <span class="math inline">\(f(x) = \frac{1}{3} x +
+2\)</span>.</p>
+<ul>
+<li><p>Fill in the following table.</p>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: center;"><span
+class="math inline">\(x\)</span></th>
+<th style="text-align: center;"><span
+class="math inline">\(-6\)</span></th>
+<th style="text-align: center;"><span
+class="math inline">\(-3\)</span></th>
+<th style="text-align: center;"><span
+class="math inline">\(0\)</span></th>
+<th style="text-align: center;"><span
+class="math inline">\(3\)</span></th>
+<th style="text-align: center;"><span
+class="math inline">\(6\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><span
+class="math inline">\(f(x)\)</span></td>
+<td style="text-align: center;">  </td>
+<td style="text-align: center;">  </td>
+<td style="text-align: center;">  </td>
+<td style="text-align: center;">  </td>
+<td style="text-align: center;">  </td>
+</tr>
+</tbody>
+</table></li>
+<li><p>Use your table to graph this function.</p></li>
+<li><p>Determine the domain of <span
+class="math inline">\(f(x)\)</span>.</p></li>
+<li><p>Determine the range of <span
+class="math inline">\(f(x)\)</span>.</p></li>
+</ul></li>
+<li><p>Let <span class="math inline">\(f(x) = \sqrt{ 2 x}\)</span>.</p>
+<ul>
+<li><p>Fill in the following table.</p>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: center;"><span
+class="math inline">\(x\)</span></th>
+<th style="text-align: center;"><span
+class="math inline">\(0\)</span></th>
+<th style="text-align: center;"><span
+class="math inline">\(2\)</span></th>
+<th style="text-align: center;"><span
+class="math inline">\(\frac{9}{2}\)</span></th>
+<th style="text-align: center;"><span
+class="math inline">\(8\)</span></th>
+<th style="text-align: center;"><span
+class="math inline">\(18\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><span
+class="math inline">\(f(x)\)</span></td>
+<td style="text-align: center;">  </td>
+<td style="text-align: center;">  </td>
+<td style="text-align: center;">  </td>
+<td style="text-align: center;">  </td>
+<td style="text-align: center;">  </td>
+</tr>
+</tbody>
+</table></li>
+<li><p>Use your table to graph this function.</p></li>
+<li><p>Determine the domain of <span
+class="math inline">\(f(x)\)</span>.</p></li>
+<li><p>Determine the range of <span
+class="math inline">\(f(x)\)</span>.</p></li>
+</ul></li>
+<li><p>Let <span class="math inline">\(g(x) = x^2-2\)</span>.</p>
+<ul>
+<li><p>Graph this function.</p></li>
+<li><p>What is its domain?</p></li>
+<li><p>What is its range? Write your answer in interval
+notation.</p></li>
+</ul></li>
+<li><p>Let <span class="math display">\[f(x) = \begin{cases}  x+4 \quad
+&amp; x \leq 2 \\ 4 &amp; x &gt; 2. \end{cases}\]</span></p>
+<ul>
+<li><p>Graph this function. Hint: Start by making a table of some values
+of this function.</p></li>
+<li><p>What is its domain?</p></li>
+<li><p>What is its range? Write your answer in interval
+notation.</p></li>
+</ul></li>
+<li><p>Let <span class="math display">\[f(x) = \begin{cases}  x^2 \qquad
+&amp; -1 \leq x \leq 2 \\ -2 &amp; 2&lt; x\leq 3 \\ x+1 &amp; x &gt; 3.
+\end{cases}\]</span></p>
+<ul>
+<li><p>Graph this function. Hint: Start by making a table of some values
+of this function.</p></li>
+<li><p>What is its domain? Write your answer in interval
+notation.</p></li>
+<li><p>What is its range? Write your answer in interval
+notation.</p></li>
+</ul></li>
+<li><p>Use the graph of <span class="math inline">\(y = f(x)\)</span>
+below to answer the following questions.</p>
+<figure>
+<img src="graph_for_problem_3.png" alt="image" />
+<figcaption aria-hidden="true">image</figcaption>
+</figure>
+<ul>
+<li><p>Evaluate <span class="math inline">\(f(-18)\)</span>.</p></li>
+<li><p>Is <span class="math inline">\(f(6) &lt; 0\)</span>? Explain
+briefly.</p></li>
+<li><p>Determine all of the zeros.</p></li>
+<li><p>Determine the <span
+class="math inline">\(y\)</span>-intercept.</p></li>
+<li><p>How many solutions does the equation <span
+class="math inline">\(f(x) = 1\)</span> have?</p></li>
+</ul></li>
+<li><p>Let <span class="math inline">\(f(x) = 2 | x | +1\)</span>.</p>
+<ul>
+<li><p>Graph this function.</p></li>
+<li><p>Explain why your graph shows that <span
+class="math inline">\(f(x)\)</span> is an even function.</p></li>
+<li><p>Show, algebraically, that <span
+class="math inline">\(f(x)\)</span> is an even function.</p></li>
+</ul></li>
+<li><p>Let <span class="math inline">\(g(x) = x^3-x\)</span>.</p>
+<ul>
+<li><p>Graph this function.</p></li>
+<li><p>Explain why your graph shows that <span
+class="math inline">\(g(x)\)</span> is an odd function.</p></li>
+<li><p>Show, algebraically, that <span
+class="math inline">\(g(x)\)</span> is an odd function.</p></li>
+</ul></li>
+<li><p>Let <span class="math inline">\(h(x) = |x-3| - 2\)</span>.</p>
+<ul>
+<li><p>Use the graph of <span class="math inline">\(h(x)\)</span> to
+determine if <span class="math inline">\(h(x)\)</span> is an even
+function, an odd function, or neither.</p></li>
+<li><p>Use algebra to determine if <span
+class="math inline">\(h(x)\)</span> is an even function, an odd
+function, or neither.</p></li>
+<li><p>Which method, (a) or (b), do you prefer? Explain
+briefly.</p></li>
+</ul></li>
+<li><p>Suppose that <span class="math inline">\(f(x)\)</span> is an odd
+function and <span class="math inline">\(0\)</span> is in the domain of
+<span class="math inline">\(f(x)\)</span>. What is <span
+class="math inline">\(f(0)\)</span> equal to? Explain your reasoning
+either using a graph or by using algebra.</p></li>
+<li><p>Use the graph of <span class="math inline">\(y = f(x)\)</span>
+below to answer the following questions.</p>
+<figure>
+<img src="graph_for_problem_3.png" alt="image" />
+<figcaption aria-hidden="true">image</figcaption>
+</figure>
+<ul>
+<li><p>Is <span class="math inline">\(f(x)\)</span> an even function?
+Explain briefly.</p></li>
+<li><p>Determine the interval(s) on which <span
+class="math inline">\(f(x)\)</span> is increasing.</p></li>
+<li><p>Determine the interval(s) on which <span
+class="math inline">\(f(x)\)</span> is decreasing.</p></li>
+<li><p>Are there any intervals where <span
+class="math inline">\(f(x)\)</span> is constant?</p></li>
+</ul></li>
+<li><p>Let <span class="math inline">\(g(x) = -2x^2+ x + 5\)</span>.
+Determine the average rate of change of <span
+class="math inline">\(g(x)\)</span> on the interval <span
+class="math inline">\([-2, 3]\)</span>.</p></li>
+<li><p>Use the following table to determine the average rate of change
+of <span class="math inline">\(h(x)\)</span> on the interval <span
+class="math inline">\([2, 6]\)</span>.</p>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: center;"><span
+class="math inline">\(x\)</span></th>
+<th style="text-align: center;"><span
+class="math inline">\(0\)</span></th>
+<th style="text-align: center;"><span
+class="math inline">\(1\)</span></th>
+<th style="text-align: center;"><span
+class="math inline">\(2\)</span></th>
+<th style="text-align: center;"><span
+class="math inline">\(5\)</span></th>
+<th style="text-align: center;"><span
+class="math inline">\(6\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><span
+class="math inline">\(h(x)\)</span></td>
+<td style="text-align: center;">-3</td>
+<td style="text-align: center;">-1</td>
+<td style="text-align: center;">2.4</td>
+<td style="text-align: center;">7</td>
+<td style="text-align: center;">10.5</td>
+</tr>
+</tbody>
+</table></li>
+<li><p>Suppose that the function <span
+class="math inline">\(f(x)\)</span> is constant on the interval <span
+class="math inline">\([a, b]\)</span>. What is the average rate of
+change of <span class="math inline">\(f(x)\)</span> on this interval?
+Explain your reasoning.</p></li>
+<li><p>Let <span class="math inline">\(f(x) = 3x^2- 2\)</span>. Let
+<span class="math inline">\(g(x) = \frac{1}{x+1}\)</span>.</p>
+<ul>
+<li><p>Determine <span class="math inline">\(f(x) + g(x)\)</span>. What
+is the domain?</p></li>
+<li><p>Determine <span class="math inline">\(f(x) - g(x)\)</span>. What
+is the domain?</p></li>
+<li><p>Determine <span class="math inline">\(f(x)g(x)\)</span>. What is
+the domain?</p></li>
+<li><p>Determine <span class="math inline">\(\frac{f(x)}{g(x)}\)</span>.
+What is the domain? (Be careful.)</p></li>
+</ul></li>
+<li><p>Let <span class="math inline">\(f(x) = x^2+x\)</span>, let <span
+class="math inline">\(g(x) = \sqrt{x}\)</span>.</p>
+<ul>
+<li><p>Determine <span class="math inline">\((f \circ
+g)(x)\)</span>.</p></li>
+<li><p>Evaluate <span class="math inline">\((f \circ g)(1)\)</span> and
+<span class="math inline">\((f \circ g)(\frac{9}{4})\)</span>.</p></li>
+<li><p>Determine <span class="math inline">\((g \circ
+f)(x)\)</span>.</p></li>
+<li><p>Evaluate <span class="math inline">\((g \circ f)(2)\)</span> and
+<span class="math inline">\((g \circ f)(-3)\)</span>.</p></li>
+</ul></li>
+<li><p>Use the tables below to answer the following questions. Some of
+the answers might be undefined, if so write “undefined".</p>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: center;"><span
+class="math inline">\(x\)</span></th>
+<th style="text-align: center;"><span
+class="math inline">\(5\)</span></th>
+<th style="text-align: center;"><span
+class="math inline">\(6\)</span></th>
+<th style="text-align: center;"><span
+class="math inline">\(7\)</span></th>
+<th style="text-align: center;"><span
+class="math inline">\(8\)</span></th>
+<th style="text-align: center;"><span
+class="math inline">\(9\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><span
+class="math inline">\(f(x)\)</span></td>
+<td style="text-align: center;">8</td>
+<td style="text-align: center;">7</td>
+<td style="text-align: center;">6</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">4</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: center;"><span
+class="math inline">\(x\)</span></th>
+<th style="text-align: center;"><span
+class="math inline">\(5\)</span></th>
+<th style="text-align: center;"><span
+class="math inline">\(6\)</span></th>
+<th style="text-align: center;"><span
+class="math inline">\(7\)</span></th>
+<th style="text-align: center;"><span
+class="math inline">\(8\)</span></th>
+<th style="text-align: center;"><span
+class="math inline">\(9\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><span
+class="math inline">\(g(x)\)</span></td>
+<td style="text-align: center;">7</td>
+<td style="text-align: center;">8</td>
+<td style="text-align: center;">6</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">4</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><p>Evaluate <span class="math inline">\((f \circ
+g)(6)\)</span>.</p></li>
+<li><p>Evaluate <span class="math inline">\((g \circ
+f)(8)\)</span>.</p></li>
+<li><p>Evaluate <span class="math inline">\((f \circ
+f)(5)\)</span>.</p></li>
+<li><p>Evaluate <span class="math inline">\((g \circ
+g)(6)\)</span>.</p></li>
+<li><p>Evaluate <span class="math inline">\((f \circ
+g)(9)\)</span>.</p></li>
+<li><p>Determine all solutions to the equation <span
+class="math inline">\(f(x+2) = 4\)</span></p></li>
+</ul></li>
+<li><p>Let <span class="math inline">\(h(x) = \sqrt[3]{4x^2-1}\)</span>.
+Find two functions <span class="math inline">\(f(x)\)</span> and <span
+class="math inline">\(g(x)\)</span> such that <span
+class="math inline">\(h(x) = (f \circ g)(x)\)</span>.</p></li>
+<li><p>The volume of a spherical balloon of radius <span
+class="math inline">\(r\)</span> cm is given by <span
+class="math display">\[V(r) = (4/3) \pi r^3 \text{ cm}^3.\]</span>
+Suppose that the balloon is inflated so that its radius increases from
+<span class="math inline">\(r = 1\)</span> cm at time <span
+class="math inline">\(t = 0\)</span> seconds at a constant rate of <span
+class="math inline">\(2\)</span> cm per second.</p>
+<ul>
+<li><p>Find a function <span class="math inline">\(r(t)\)</span> that
+gives the radius of the balloon (in cm) as a function of time (in
+seconds). Hint: This should be a linear function.</p></li>
+<li><p>Determine a function <span class="math inline">\(V(t)\)</span>
+that gives the volume of the balloon in (cm<span
+class="math inline">\(^3\)</span>) as a function of time (in
+seconds).</p></li>
+<li><p>Determine the volume of the balloon after <span
+class="math inline">\(2\)</span> seconds.</p></li>
+</ul></li>
+<li><p>Klamath Connections students at HSU recently finished an
+experiment to determine the effects of nitrogen and phosphorus on algae
+growth. They added nitrogen and phosphorus (common ingredients in
+fertilizer) to Klamath river water and recorded an opacity score (how
+cloudy) for the water every 3 days. We expect the negative control to
+have a low opacity score which means it is more transparent than water
+with added nitrogen and phosphorus. Summarizing: negative control is
+Klamath water without nitrogen and phosphorus added, treatment is
+Klamath water with nitrogen and phosphorus added, positive control is a
+commercial growth medium with nutrients and pH optimized for algal
+growth.</p>
+<p>The results look something like this:</p>
+<figure>
+<img src="KC_opacity_graph.png" alt="image" />
+<figcaption aria-hidden="true">image</figcaption>
+</figure>
+<p>Using this graph answer the following questions. Note that you can
+<strong>ignore</strong> the graph for the <strong>positive
+control</strong>.</p>
+<ul>
+<li><p>What is the average rate of change for treated samples over the
+21 days?</p></li>
+<li><p>What is the average rate of change for untreated samples
+(negative control) over the 21 days?</p></li>
+<li><p>Determine a piece-wise function that models the treated samples.
+Use correct function notation. For example, for a start: <span
+class="math display">\[O(t) = \begin{cases} \ \ \ \  &amp; t&lt;6, \\ \
+\ \ \   &amp;6 \leq t &lt; 9, \\ \ \ \ \   &amp; \ \ \ \ \ \ \ \ \ \ \
+\  , \\ \ \ \  &amp;  \ \ \ \ \ \ \ \ \ \ \ \ .
+\end{cases}\]</span></p></li>
+<li><p>Why is a piece-wise function a good way to model the treated
+samples?</p></li>
+<li><p>Determine a function, <span class="math inline">\(N(t)\)</span>,
+that models the untreated samples (negative control).</p></li>
+<li><p>Determine <span class="math inline">\(O(21)\)</span>.</p></li>
+<li><p>Determine <span class="math inline">\(N(21)\)</span>.</p></li>
+<li><p>What do your answers to parts (f) and (g) tell you about the
+affect of adding nitrogen and phosphorus to river water?</p></li>
+</ul></li>
+<li><p>The following puzzle appeared in Season 9, Episode 17 of the
+Simpsons.</p>
+<figure>
+<img src="simpsons.png" alt="image" />
+<figcaption aria-hidden="true">image</figcaption>
+</figure>
+<ol type="1">
+<li><p>Can you find the next term in the sequence? Hint: each term has
+symmetry. If you cover the left half of each term, this might help you
+see the solution.</p></li>
+<li><p>Which of the terms could be a graph of a function? Hint: apply
+the vertical line test.</p></li>
+</ol></li>
+<li><p>REFLECTION AND CONSOLIDATION (Hint: this will form part of a
+study guide for your first exam!)</p>
+<ol type="1">
+<li><p>Summarize the main ideas/formulas you used for this problem set.
+You can list formulas, bullet-out phrases, write a paragraph, draw
+sketches, or answer this question in any way that makes sense to
+you.</p></li>
+<li><p>What three problems were the most challenging for you? After
+deciding, look at your solutions carefully, and write a short
+explanation of what you found challenging and how you overcame this
+challenge in your problem solving. For example, did you find a simpler
+problem about the same topic? Did you guess and check? Did you graph
+with technology?</p></li>
+<li><p>Write three potential test questions on the topics covered in
+this problem set.</p></li>
+</ol></li>
+</ol>
+</body>
+</html>
